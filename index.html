@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="./images/icon.png">
+	<link rel="stylesheet" href="./css/index.css">
+	
+	<title>Dark | Season 3</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="player">
+			<!-- <video id="video" controls autoplay muted src="./videos/lofi.mp4" width="400"></video> -->
+			<video id="video" poster="./images/poster.jpg" src="./videos/Dark.mp4" width="400"></video>
+
+			<div class="player-overlay">
+				<h2 class="player-title" aria-label="Dark Season 3 | Official Trailer | Netflix">Dark Season 3 | Official Trailer | Netflix</h2>
+				
+				<div class="player-actions">
+					<button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+					<button class="button" id="play"     aria-label="Reproducir"             title="Reproducir"></button>
+					<button class="button" id="pause"    aria-label="Pausar"                 title="Pausar" hidden></button>
+					<button class="button" id="forward"  aria-label="Adelantar 10 segundos"  title="Adelantar 10 segundos"></button>
+				</div>
+	
+				<div class="player-progress">
+					<button class="button" id="reload" aria-label="Reiniciar video" title="Reiniciar video" hidden></button>
+					
+					<input id="progress" type="range" min="0" value="0" step="1">
+					
+					<button class="button" id="sound" aria-label="Sonido activado" title="Sonido activado"></button>
+					<button class="button" id="mute" aria-label="Sonido silenciado" title="Sonido silenciado" hidden></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/index.js"></script>
+</body>
+</html>
